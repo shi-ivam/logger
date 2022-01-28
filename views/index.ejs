@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logger</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+  <style>
+  *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Ubuntu';
+  display:flex;
+  height:100vh;
+  width:100vw;
+  justify-content:center;
+  align-items:center;
+}
+h1{
+  font-weight:200;
+}
+
+.container{
+padding:20px;
+  border-radius:20px;
+  box-shadow:0 -2px 35px rgba(0,0,0,0.1);
+}
+.main{
+  padding:20px 10px 0 10px;
+}
+.info{
+  margin-bottom:10px;
+  padding:0 10px 10px 10px;
+  border-bottom:2px solid rgba(0,0,0,0.075);
+}
+
+h4{
+  font-size:1.5rem;
+  margin-bottom:15px;
+  font-weight:300;
+}
+
+.head{
+  font-weight:600;
+  font-size:1.1rem;
+}
+
+.data{
+  margin-top:5px;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Logger</h1>
+    <div class="main">
+      <h4>Status</h4>
+      <div class="info">
+        <p class="head">Last Updated :</p>
+        <p class="data"><%= lastUpdated %></p>
+      </div>
+      <div class="info">
+        <p class="head">Last Token :</p>
+        <p class="data"><%= lastToken %></p>
+      </div>
+      <div class="info">
+        <p class="head">Message :</p>
+        <p class="data"><%= message %></p>
+      </div>
+      <div class="info">
+        <p class="head">Total :</p>
+        <p class="data"><%= counter %></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
